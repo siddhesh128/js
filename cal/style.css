@@ -1,0 +1,90 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.container2 {
+    display: inline-block;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 25px;
+    background-color: rgb(135, 175, 216);
+}
+
+h1 {
+    color: #ffffff;
+}
+
+table {
+    margin: auto;
+}
+
+input {
+    font-size: 30px;
+    background-color: #868585bb;
+    color: #221f1f;
+    height: 40px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+button {
+    border-radius: 20px;
+    font-size: 26px;
+    color: #ffffff;
+    width: 92px;
+    height: 70px;
+    background: #3439d9;
+    background-image: -webkit-linear-gradient(top, #3439d9, #0570f2);
+    background-image: -moz-linear-gradient(top, #3439d9, #0570f2);
+    background-image: -ms-linear-gradient(top, #3439d9, #0570f2);
+    background-image: -o-linear-gradient(top, #3439d9, #0570f2);
+    background-image: linear-gradient(to bottom, #3439d9, #0570f2);
+    text-shadow: 1px 1px 3px #666666;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+#clearall {
+    border-radius: 20px;
+    font-size: 26px;
+    color: #ffffff;
+    width: 92px;
+    height: 70px;
+    background: #ff0000;
+    background-image: -webkit-linear-gradient(top, #ff0202, #8d1414);
+    background-image: -moz-linear-gradient(top, #ff0202, #8d1414);
+    background-image: -ms-linear-gradient(top, #ff0202, #8d1414);
+    background-image: -o-linear-gradient(top, #ff0202, #8d1414);
+    background-image: linear-gradient(to bottom, #ff0202, #8d1414);
+    text-shadow: 1px 1px 3px #666666;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#clearall:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #ff3d02, #ad2a09);
+    background-image: -moz-linear-gradient(top, #ff3d02, #ad2a09);
+    background-image: -ms-linear-gradient(top, #ff3d02, #ad2a09);
+    background-image: -o-linear-gradient(top, #ff3d02, #ad2a09);
+    background-image: linear-gradient(to bottom, #ff3d02, #ad2a09);
+    text-decoration: none;
+}

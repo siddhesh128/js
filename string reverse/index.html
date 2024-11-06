@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>String</h2>
+    <button onclick="RevStr()">Reverse a String</button>
+    <button onclick="ReplChr()">Replace Characters</button>
+    <p id="test"></p>
+    <p id="demo"></p>
+    <script>
+        function ReplChr() {
+            document.getElementById("test").innerHTML = "Replace all occurrences of M with W in the paragraph : My Music with Microsoft Apps";
+            document.getElementById("demo").innerHTML = "My Music with Microsoft Apps";
+            let text = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML =
+                text.replace(/M/g, "W");
+        }
+        function RevStr() {
+            // empty string
+            let revString = "";
+            var str = prompt("Enter String");
+            for (let i = str.length - 1; i >= 0; i--) {
+                revString += str[i];
+            }
+            console.log("Given String = " + str + " " + "reversed String = " + revString);
+            PalStr(str, revString);
+        }
+        function PalStr(str, revString) {
+            // find the length of a string
+            var i = str.localeCompare(revString);
+            if (i == 0) {
+                console.log('It is a palindrome');
+            }
+            else {
+                console.log('It is not a palindrome');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Two Strings</title>
+</head>
+<body>
+    <h1>Experiment 4</h1>
+    <h2>Compare two strings using various methods</h2>
+    <p>Aim: Write a JavaScript program to compare two strings using various methods.</p>
+
+    <script>
+        // Method 1: Using toUpperCase() method
+        const string1 = 'JavaScript Program';
+        const string2 = 'javascript ';
+        // Compare both strings
+        const result1 = string1.toUpperCase() === string2.toUpperCase();
+        if (result1) {
+            console.log('Method 1: The strings are similar.');
+        } else {
+            console.log('Method 1: The strings are not similar.');
+        }
+
+        // Method 2: Using Regular Expressions
+        const string3 = 'JavaScript Program';
+        const string4 = 'javascript program';
+        // Create regex
+        const pattern = new RegExp(string3, "gi");
+        // Compare the strings
+        const result2 = pattern.test(string4);
+        if (result2) {
+            console.log('Method 2: The strings are similar.');
+        } else {
+            console.log('Method 2: The strings are not similar.');
+        }
+    </script>
+</body>
+</html>

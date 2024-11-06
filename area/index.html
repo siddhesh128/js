@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shape Area Calculator</title>
+    <style>
+        #canvasContainer {
+            display: flex;
+            justify-content: space-around;
+        }
+        svg {
+            border: 1px solid black;
+        }
+        .input-container {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shape Area Calculator</h1>
+
+    <div class="input-container">
+        <h2>Rectangle</h2>
+        <label for="rectWidth">Width:</label>
+        <input type="number" id="rectWidth">
+        <label for="rectHeight">Height:</label>
+        <input type="number" id="rectHeight">
+        <button onclick="calculateRectangleArea()">Calculate Rectangle Area</button>
+        <p id="rectangleArea"></p>
+    </div>
+
+    <div class="input-container">
+        <h2>Triangle</h2>
+        <label for="triBase">Base:</label>
+        <input type="number" id="triBase">
+        <label for="triHeight">Height:</label>
+        <input type="number" id="triHeight">
+        <button onclick="calculateTriangleArea()">Calculate Triangle Area</button>
+        <p id="triangleArea"></p>
+    </div>
+
+    <div class="input-container">
+        <h2>Circle</h2>
+        <label for="circleRadius">Radius:</label>
+        <input type="number" id="circleRadius">
+        <button onclick="calculateCircleArea()">Calculate Circle Area</button>
+        <p id="circleArea"></p>
+    </div>
+
+    <div id="canvasContainer">
+        <div>
+            <h2>Rectangle</h2>
+            <svg id="rectangleSvg" width="200" height="200">
+                <rect id="rectangle" x="0" y="0" width="0" height="0" fill="red"></rect>
+            </svg>
+        </div>
+
+        <div>
+            <h2>Triangle</h2>
+            <svg id="triangleSvg" width="200" height="200">
+                <polygon id="triangle" points="0,0 0,0 0,0" fill="blue"></polygon>
+            </svg>
+        </div>
+
+        <div>
+            <h2>Circle</h2>
+            <svg id="circleSvg" width="200" height="200">
+                <circle id="circle" cx="0" cy="0" r="0" fill="green"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

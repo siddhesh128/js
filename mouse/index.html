@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            cursor: pointer;
+        }
+        input {
+            margin-top: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</h1>
+    <p>This example demonstrates how to assign an "onmouseover" and "onmouseout" event to an h1 element.</p>
+
+    <p>Enter your name: <input type="text" onfocus="myFunction(this)"></p>
+    <p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+    <script>
+        function mouseOver() {
+            document.getElementById("demo").style.color = "red";
+        }
+
+        function mouseOut() {
+            document.getElementById("demo").style.color = "black";
+        }
+
+        function myFunction(x) {
+            x.style.background = "yellow";
+        }
+    </script>
+</body>
+</html>

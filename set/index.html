@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustrate Different Set Operations</title>
+</head>
+<body>
+    <h1>Illustrate Different Set Operations</h1>
+    <p>Aim: Write a JavaScript program to illustrate different Set operations like:</p>
+    <ul>
+        <li>Union</li>
+        <li>Intersection</li>
+        <li>Difference</li>
+        <li>Set Subset</li>
+    </ul>
+
+    <script>
+        // Perform union operation
+        // Contain elements of both sets
+        function union(a, b) {
+            let unionSet = new Set(a);
+            for (let i of b) {
+                unionSet.add(i);
+            }
+            return unionSet;
+        }
+
+        // Perform intersection operation
+        // Elements of set a that are also in set b
+        function intersection(setA, setB) {
+            let intersectionSet = new Set();
+            for (let i of setB) {
+                if (setA.has(i)) {
+                    intersectionSet.add(i);
+                }
+            }
+            return intersectionSet;
+        }
+
+        // Perform difference operation
+        // Elements of set a that are not in set b
+        function difference(setA, setB) {
+            let differenceSet = new Set(setA);
+            for (let i of setB) {
+                differenceSet.delete(i);
+            }
+            return differenceSet;
+        }
+
+        // Perform subset operation
+        // True if all elements of set b are in set a
+        function subset(setA, setB) {
+            for (let i of setB) {
+                if (!setA.has(i)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        // Two sets of fruits
+        const setA = new Set(['apple', 'mango', 'orange']);
+        const setB = new Set(['grapes', 'apple', 'banana']);
+
+        // Test union operation
+        const unionResult = union(setA, setB);
+        console.log('Union:', unionResult);
+
+        // Test intersection operation
+        const intersectionResult = intersection(setA, setB);
+        console.log('Intersection:', intersectionResult);
+
+        // Test difference operation
+        const differenceResult = difference(setA, setB);
+        console.log('Difference:', differenceResult);
+
+        // Test subset operation
+        const subsetResult = subset(setA, new Set(['apple', 'orange']));
+        console.log('Subset:', subsetResult);
+    </script>
+</body>
+</html>
